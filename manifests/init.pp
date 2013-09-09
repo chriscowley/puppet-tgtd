@@ -35,9 +35,15 @@
 #
 # Copyright 2013 Your name here, unless otherwise noted.
 #
+<<<<<<< HEAD
 
 class tgtd {
   package {'scsi-target-utils':
     ensure => installed,
   }
+=======
+class tgtd {
+
+
+>>>>>>> 9f660b0bf7909f1e188d25d830fdd8e9156ba020
 }
