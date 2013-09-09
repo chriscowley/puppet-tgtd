@@ -1,13 +1,11 @@
 {
-  "name": "chriscowley-tgtd",
-  "version": "0.1.0",
-  "summary": "Module to manage tgtd on RHEL and derivatives",
-  "author": "Chris Cowley",
+  "summary": "",
+  "author": "",
   "description": "",
   "dependencies": [],
   "types": [],
   "checksums": {},
   "source": "",
-  "project_page": "https://github.com/chriscowley/puppet-tgtd",
-  "license": "GPL v3"
+  "project_page": "",
+  "license": ""
 }

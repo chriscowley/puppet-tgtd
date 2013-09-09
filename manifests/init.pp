@@ -24,26 +24,40 @@
 # === Examples
 #
 #  class { tgtd:
-#    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ]
+#    
 #  }
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Author Name <chris@chriscowley.me.uk>
 #
 # === Copyright
 #
 # Copyright 2013 Your name here, unless otherwise noted.
 #
-<<<<<<< HEAD
-
 class tgtd {
+  include tgtd::install 
+  include tgtd::config 
+
+}
+
+class tgtd::install {
   package {'scsi-target-utils':
     ensure => installed,
   }
-=======
-class tgtd {
+}
 
-
->>>>>>> 9f660b0bf7909f1e188d25d830fdd8e9156ba020
+class tgtd::config {
+    file {'/etc/sysconfig/target':
+    content => 'puppet:///modules/tgtd/sysconfig-tgtd',
+    require => Class['tgtd::install']
+  }
+  file {'/etc/tgt/targets.conf':
+    content => 'puppet:///modules/tgtd/targets.conf',
+    require =>  Class['tgtd::install'],
+  }
+  file { '/etc/tgt/targets.d':
+    ensure  => directory,
+    require => Class['tgtd::install']
+  }
 }

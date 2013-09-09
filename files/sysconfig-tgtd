@@ -1,0 +1,2 @@
+# configuration file under Puppet control, changes will be overwritten
+TGTD_CONFIG=/etc/tgt/targets.conf
