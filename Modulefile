@@ -1,8 +1,7 @@
 name    'chriscowley-tgtd'
-
 source ''
 author 'Chris Cowley'
-license 'GPL v3'
+license 'GPLv3'
 summary 'Module to manage tgtd on RHEL and derivatives'
 description ''
 project_page 'https://github.com/chriscowley/puppet-tgtd'
