@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 # The baseline for module testing used by Puppet Labs is that each manifest
 # should have a corresponding test manifest that declares that class or defined
 # type.
@@ -10,5 +8,5 @@
 #
 # Learn more about module testing here: http://docs.puppetlabs.com/guides/tests_smoke.html
 #
->>>>>>> 9f660b0bf7909f1e188d25d830fdd8e9156ba020
+
 include tgtd
